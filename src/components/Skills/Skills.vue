@@ -1,5 +1,5 @@
 <template lang="">
-     <section class="skills section">
+     <section class="skills section" id="skills">
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">My Favourite Technical</span>
             <div class="skills__container container grid">
@@ -7,19 +7,24 @@
                     <!-- ==========================SKILL 1========================= -->
                     <div class="skills__content skills__open" ref="skills__toggle">
                         <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
+                            <unicon name="brackets-curly" class="skills__icon"/>
                             <div>
                                 <h1 class="skills__title">Frontend Developer</h1>
                                 <span class="skills__subtitle">More Than 1 Years</span>
                             </div>
 
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                            <unicon name="angle-down" class="skills__arrow"/>
                         </div>
                         <div class="skills__list grid" v-for="skill in this.fontEndSkills">
                             <div class="skills__data">
                                 <div class="skills__titles">
+                                    <div class="skills__block">
+                                    <!-- <unicon :name="skill.icon|| 'database-alt'" class="sub__skills" /> -->
+                                    <font-awesome-icon :icon="skill.icon||null" class="sub__skills" />
                                     <h3 class="skills__name">{{skill.name}}</h3>
+                                    </div>
                                     <span class="skills__number">{{skill.percent}}%</span>
+                                    
                                 </div>
                                 <div class="skills__bar">
                                     <div class="skills__percentage" :style="{'width':`${skill.percent}%`}">
@@ -31,19 +36,24 @@
                     <!-- ==========================SKILL 2========================= -->
                     <div class="skills__content skills__close" >
                         <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
+                            <unicon name="database-alt" class="skills__icon"/>
+
 
                             <div>
                                 <h1 class="skills__title">BackEnd Developer</h1>
                                 <span class="skills__subtitle">More Than 2 Years</span>
                             </div>
 
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                            <unicon name="angle-down" class="skills__arrow"/>
+
                         </div>
                         <div class="skills__list grid" v-for="skill in this.backEndSkills">
                             <div class="skills__data">
                                 <div class="skills__titles">
+                                    <div class="skills__block">
+                                    <font-awesome-icon :icon="skill.icon||null" class="sub__skills" />
                                     <h3 class="skills__name">{{skill.name}}</h3>
+                                    </div>
                                     <span class="skills__number">{{skill.percent}}%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -58,19 +68,24 @@
                 <!-- ==========================SKILL 3========================= -->
                 <div class="skills__content skills__close">
                         <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
+                            <unicon name="image" class="skills__icon"/>
+
 
                             <div>
-                                <h1 class="skills__title">BackEnd Developer</h1>
-                                <span class="skills__subtitle">More Than 2 Years</span>
+                                <h1 class="skills__title">Design And Photograph</h1>
+                                <span class="skills__subtitle">More Than 1 Years</span>
                             </div>
 
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                            <unicon name="angle-down" class="skills__arrow"/>
+                            
                         </div>
                         <div class="skills__list grid" v-for="skill in this.designSkills">
                             <div class="skills__data">
                                 <div class="skills__titles">
+                                    <div class="skills__block">
+                                    <font-awesome-icon :icon="skill.icon||null" class="sub__skills" />
                                     <h3 class="skills__name">{{skill.name}}</h3>
+                                    </div>
                                     <span class="skills__number">{{skill.percent}}%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -93,47 +108,60 @@ export default {
             fontEndSkills: [
                 {
                     name: "HTML",
-                    percent: 60
+                    percent: 60,
+                    icon:  "fa-brands fa-html5"
                 },
                 {
                     name: "CSS",
-                    percent: 50
+                    percent: 50,
+                    icon:"fa-brands fa-css3-alt"
                 },
                 {
                     name: "JavaScript",
-                    percent: 50
+                    percent: 50,
+                    icon:  "fa-brands fa-js"
+                    
                 },
                 {
                     name: "ReactJS",
-                    percent: 40
+                    percent: 40,
+                    icon:  "fa-brands fa-react"
+
                 },
                 {
                     name: "VueJS",
-                    percent: 60
+                    percent: 60,
+                    icon:  "fa-brands fa-vuejs"
+
                 },
             ],
             backEndSkills: [
                 {
                     name: "Python",
-                    percent: 70
+                    percent: 70,
+                    icon:  "fa-brands fa-python"
                 },
                 {
-                    name: "Jave",
-                    percent: 60
+                    name: "Java",
+                    percent: 60,
+                    icon:  "fa-brands fa-java"
                 },
                 {
                     name: "NodeJs",
-                    percent: 50
+                    percent: 50,
+                    icon:  "fa-brands fa-node-js"
                 },
             ],
             designSkills: [
                 {
                     name: "Photoshop",
-                    percent: 70
+                    percent: 70,
+                    icon: "fa-solid fa-pen"
                 }
                 , {
                     name: "Figma",
-                    percent: 70
+                    percent: 70,
+                    icon : 'fa-brands fa-figma'
                 },
             ]
         }
@@ -144,13 +172,13 @@ export default {
         const skillsHeader = document.querySelectorAll('.skills__header')
         skillsHeader.forEach((el) => {
             el.addEventListener('click', (el) => {
-                let itemClass = el.path[2].className                
+                let itemClass = el.path[3].className                
                 for (let i = 0; i < skillsContent.length; i++) {
                     skillsContent[i].className = 'skills__content skills__close'
 
                 }
                 if (itemClass === 'skills__content skills__close') {
-                    el.path[2].className = 'skills__content skills__open'
+                    el.path[3].className = 'skills__content skills__open'
                 }
 
             })

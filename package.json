@@ -6,6 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "config": "vite config",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
@@ -14,6 +15,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.2",
+    "axios": "^1.2.3",
     "jquery": "^3.6.3",
     "pinia": "^2.0.28",
     "vite-svg-loader": "^4.0.0",
@@ -29,7 +31,7 @@
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
     "prettier": "^2.7.1",
-    "vite": "^4.0.0",
+    "vite": "^4.0.4",
     "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.7.14"
   }
