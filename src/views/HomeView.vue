@@ -6,6 +6,7 @@
     <Skills/>
     <Qualification/>
     <Service/>
+    <Porfolio/>
   </main>
 </template>
 <script>
@@ -15,6 +16,7 @@ import About from "../components/About/About.vue";
 import Skills from "../components/Skills/Skills.vue";
 import Service from "../components/Services/Service.vue";
 import Qualification from "../components/qualification/Qualification.vue";
+import Porfolio from "../components/Porfolio/Porfolio.vue";
 export default {
   name :"HomeView" ,
   components : {
@@ -23,7 +25,8 @@ export default {
     About,
     Skills,
     Qualification,
-    Service
+    Service,
+    Porfolio
   },
   methods:{
     scrollLink(name){

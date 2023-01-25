@@ -2,12 +2,13 @@
     <section class="services section" id="service">
         <h2 class="section__title">Services</h2>
         <span class="section__subtitle">What I Offer</span>
+        
         <div class="services__container container grid">
             <!-- =====================Service 1================== -->
             <div class="services__content">
                 <div>
                     <unicon name="web-grid" class="services__icon"/>
-                    <h3 class="services__title">Frontend Developer</h3>
+                    <h3 class="services__title">Backend Developer</h3>
                 </div>
 
                 <span class="button button--flex button--small button--link services__button">
@@ -16,9 +17,7 @@
                 </span>
                 <div class="services__modal">
                     <div class="services__modal-content">
-                        <h4 class="services__model-title">
-                            Frontend Developer
-                        </h4>
+                        <h4 class="services__model-title">Backend Developer </h4>
                         <unicon name="times" class="services__modal-close"/>
                         <ul class="services__modal-services grid">
                             <li class="services__modal-service">
@@ -33,8 +32,8 @@
                     </div>
                 </div>
             </div>
-            <!-- =====================Service 2================== -->
-            <div class="services__content">
+             <!-- =====================Service 1================== -->
+             <div class="services__content">
                 <div>
                     <unicon name="web-grid" class="services__icon"/>
                     <h3 class="services__title">Frontend Developer</h3>
@@ -46,9 +45,7 @@
                 </span>
                 <div class="services__modal">
                     <div class="services__modal-content">
-                        <h4 class="services__model-title">
-                            Frontend Developer
-                        </h4>
+                        <h4 class="services__model-title">Frontend Developer </h4>
                         <unicon name="times" class="services__modal-close"/>
                         <ul class="services__modal-services grid">
                             <li class="services__modal-service">
@@ -63,7 +60,9 @@
                     </div>
                 </div>
             </div>
-            <!-- =====================Service 1================== -->
+
+
+            <!-- =====================Service 2================== -->
             <div class="services__content">
                 <div>
                     <unicon name="web-grid" class="services__icon"/>
@@ -93,6 +92,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 </template>
