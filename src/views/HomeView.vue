@@ -7,6 +7,10 @@
     <Qualification/>
     <Service/>
     <Porfolio/>
+    <!-- <ProjectMind/> -->
+    <!-- <Testimonial/> -->
+    <Contact/>
+    <Footer @scroll="this.scrollLink"/>
   </main>
 </template>
 <script>
@@ -17,6 +21,10 @@ import Skills from "../components/Skills/Skills.vue";
 import Service from "../components/Services/Service.vue";
 import Qualification from "../components/qualification/Qualification.vue";
 import Porfolio from "../components/Porfolio/Porfolio.vue";
+import ProjectMind from "../components/ProjectMind/ProjectMind.vue";
+import Testimonial from "../components/Testimonial/Testimonial.vue"
+import Contact from "../components/Contact/Contact.vue"
+import Footer from "../components/Footer/Footer.vue"
 export default {
   name :"HomeView" ,
   components : {
@@ -26,7 +34,18 @@ export default {
     Skills,
     Qualification,
     Service,
-    Porfolio
+    Porfolio,
+    ProjectMind,
+    Testimonial,
+    Contact,
+    Footer
+  },
+  mounted (){
+    const nav = document.getElementById('header')
+    window.addEventListener('scroll',()=>{
+      if(window.scrollY>=100) nav.classList.add('scroll-header');
+      else nav.classList.remove('scroll-header')
+    })
   },
   methods:{
     scrollLink(name){
@@ -34,7 +53,6 @@ export default {
         block: "center",
         behavior:"smooth"
       })
-      console.log(el)
     }
   }
 

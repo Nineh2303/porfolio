@@ -17,7 +17,7 @@ import Unicon from 'vue-unicons'
 
 
 import { uniWebGrid,uniApps,uniEstate, uniUser,uniFile,uniBriefcaseAlt,uniScenery,uniMessage,uniTimes,uniAngleDown,
-    uniLinkedinAlt, uniDribbble, uniGithubAlt, uniMouseAlt,uniArrowDown,uniBracketsCurly, uniDatabaseAlt, uniImage, uniArrowRight, uniCheckCircle} from 'vue-unicons/dist/icons'
+    uniLinkedinAlt, uniDribbble, uniGithubAlt, uniMouseAlt,uniArrowDown,uniBracketsCurly, uniDatabaseAlt, uniImage, uniArrowRight, uniCheckCircle, uniPhone, uniEnvelope, uniFacebook, uniInstagram} from 'vue-unicons/dist/icons'
     import { faBriefcase, faDownload, faGraduationCap, faPen } from "@fortawesome/free-solid-svg-icons";
 import { faCalendarDays } from "@fortawesome/free-regular-svg-icons";
     
@@ -39,7 +39,11 @@ import { faCalendarDays } from "@fortawesome/free-regular-svg-icons";
         uniAngleDown,
         uniWebGrid  ,
         uniArrowRight,
-        uniCheckCircle            
+        uniCheckCircle ,
+        uniPhone ,
+        uniEnvelope,
+        uniFacebook,
+        uniInstagram
     ]
 
     library.add([faLinkedin, faFacebook,  faGithub, faHtml5, faCss3Alt, faJs,faReact,faVuejs,
