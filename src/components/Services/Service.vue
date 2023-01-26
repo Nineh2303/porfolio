@@ -13,7 +13,7 @@
 
                 <span class="button button--flex button--small button--link services__button">
                     View More
-                    <unicon  name="arrow-right" class="button__icon"/>
+                    <unicon  name="arrow-right" class="button__icon-serv"/>
                 </span>
                 <div class="services__modal">
                     <div class="services__modal-content">
@@ -41,7 +41,7 @@
 
                 <span class="button button--flex button--small button--link services__button">
                     View More
-                    <unicon  name="arrow-right" class="button__icon"/>
+                    <unicon  name="arrow-right" class="button__icon-serv"/>
                 </span>
                 <div class="services__modal">
                     <div class="services__modal-content">
@@ -71,7 +71,7 @@
 
                 <span class="button button--flex button--small button--link services__button">
                     View More
-                    <unicon  name="arrow-right" class="button__icon"/>
+                    <unicon  name="arrow-right" class="button__icon-serv"/>
                 </span>
                 <div class="services__modal">
                     <div class="services__modal-content">

@@ -44,6 +44,9 @@
             </div>
 
             <div class="nav__btns">
+
+                <unicon name="moon" class="change-theme" id="theme-button"/>
+
                 <div class="nav__toggle" id="nav-toggle" @click="this.isToggle=true">
                     <!-- <i class="uil uil-apps nav__icon"></i> -->
                     <unicon name="apps" class="nav__open"/>

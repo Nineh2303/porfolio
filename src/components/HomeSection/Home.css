@@ -3,6 +3,8 @@
     gap: 1rem;
 
 }
+
+
 .home__content{
     grid-template-columns: .5fr 3fr;
     padding-top: 3.5rem;
@@ -14,16 +16,15 @@
     row-gap: 1rem;
 }
 .home__social-icon{
-    font-size: 1.25rem;
-    color: var(--first-color);
-
+    font-size: 2rem;
+    color: var(--main-color);
 }
 .home__social-icon:hover{
-    color:var(--first-color-alt)
+    color :var(--hover-color);  
 }
 .home__blob{
     width: 300px;
-    fill: var(--first-color);
+    fill: var(--main-color);
 }
 .home__blob-img{
     width: 250px;
@@ -44,9 +45,6 @@
     margin-bottom: var(--mb-2);
 }
 
-.home__scroll{
-
-}
 .home__scroll-button{
     color:var(--first-color);
     transition:  .3s;
@@ -72,43 +70,31 @@
 
 
 }
+
 /* ======================BUTTONS================= */
 .button{
     display:inline-block;
     background-color: var(--main-color);
-    color:white;
+    fill: var(--text-button-color) ;
+    color:var(--text-button-color) ;    
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    transition: .3s;
 
 }
 .button:hover{
-    opacity: .7;
+    background-color: var(--hover-color);
+    fill: var(--text-hover-color) ;
+    color:var(--text-hover-color) ;  
+
 }
 .button__icon{
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
-    transition: .3s;
 }
 .button--flex{
     display: inline-flex;
     align-items: center;
-
-}
-.home__icon{
-    width: 1.5rem;
-    height: 1.5rem;
-    fill:var(--main-color);
-
-}
-.home__icon:hover{
-    fill:var(--hover-color);
-    opacity: .7;
-    transition: .3s;
 }
 
-.contact__icon{
-    fill : white;
-    margin-top: 4px;
-    margin-right: 5px;  
-}

@@ -9,7 +9,6 @@
                         </router-link>
                         <router-link to="/" target="_blank" class="home__social-icon">
                             <font-awesome-icon icon="fa-brands fa-facebook" class="home__icon"/>
-                            
                         </router-link>
                         <router-link to="/" target="_blank" class="home__social-icon">
                             <font-awesome-icon icon="fa-brands fa-github" class="home__icon"/>

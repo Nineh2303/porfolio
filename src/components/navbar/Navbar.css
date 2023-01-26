@@ -45,6 +45,10 @@
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
 }
+.nav__icon{
+    width: 1.6rem;
+    height: 1.6rem;
+}
 
 .nav__link{
     display: flex;
@@ -53,18 +57,16 @@
     font-size: var(--small-font-size);
     color: var(--main-color)  ;
     font-weight: var(--font-medium);    
+    fill: var(--main-color); 
+    transition: .1s;
+    
 }
+
 .nav__link:hover{
     color: var(--hover-color); 
-    fill: var(--hover-color)
-}
-
-
-.nav__icon{
-    width: 1.6rem;
-    height: 1.6rem;
-    fill: var(--main-color); 
-
+    fill: var(--hover-color);
+    box-shadow: 2px 3px .1rem 0 rgba(0,0,0,.15);
+    border-radius: .5rem ;
 }
 
 .nav__close{
@@ -99,4 +101,17 @@
  }
  .scroll-header{
     box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+ }
+ .nav__btns{
+    display: flex;
+    align-items: center;
+ }
+ .change-theme{
+    font-size: 1.25rem;
+    fill: var(--main-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+ }
+ .change-theme:hover{
+    fill :var(--hover-color)
  }

@@ -18,6 +18,10 @@
 .porfolio__description{
     margin-bottom: var(--mb-0-75);
 }
+.button__icon{
+    margin-top: 7px;
+
+}
 .porfolio__button:hover .button__icon{
     transform: translateX(.25rem) ;
 }

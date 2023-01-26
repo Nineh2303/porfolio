@@ -1,6 +1,6 @@
 @import url("../../assets/base.css");
 
-.button__icon{
+.button__icon-serv{
     fill:var(--main-color);
     margin-top: 7px;
 }
@@ -48,7 +48,7 @@
     color: var(--hover-color);
     fill: var(--hover-color)
 }
-.services__button:hover .button__icon{
+.services__button:hover .button__icon-serv{
     transform: translateX(.25rem);
 }
 .services__modal{

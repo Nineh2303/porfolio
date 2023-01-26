@@ -10,7 +10,6 @@
 .contact__icon{
     width : 2rem ;
     height: 2rem ;
-    fill: var(--main-color);
     margin-right: var(--mb-0-75);
 }
 .contact__title{
