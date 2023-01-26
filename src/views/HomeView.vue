@@ -11,6 +11,9 @@
     <!-- <Testimonial/> -->
     <Contact/>
     <Footer @scroll="this.scrollLink"/>
+    <router-link to="#" class="scrollup" id="scrollup">
+      <unicon name="arrow-up" class="scrollup__icon"/>
+    </router-link>
   </main>
 </template>
 <script>
@@ -42,9 +45,20 @@ export default {
   },
   mounted (){
     const nav = document.getElementById('header')
+    const scrollUp= document.getElementById('scrollup')
     window.addEventListener('scroll',()=>{
       if(window.scrollY>=100) nav.classList.add('scroll-header');
       else nav.classList.remove('scroll-header')
+
+      if (window.scrollY>=800) scrollUp.classList.add('scroll-up');
+      else scrollUp.classList.remove('scroll-up')
+    })
+    
+    scrollUp.addEventListener('click',()=>{
+        document.getElementById('home').scrollIntoView({
+        block: "center",
+        behavior:"smooth"
+      });
     })
   },
   methods:{
