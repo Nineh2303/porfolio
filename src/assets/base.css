@@ -87,6 +87,7 @@ body{
     font-family: var(--body-font) ;
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
+    transition: 1s;
     color: var(--text-color);
 }
 
@@ -155,17 +156,21 @@ img{
 
 /* =========================DARK THEME======================== */
 body.dark-theme{
-    --main-color: rgba(134, 134, 134, 0.8);
-    --hover-color:rgba(82, 82, 82,.4);
+    --main-color: rgb(114, 114, 114);
+    --hover-color:rgb(233, 233, 233);
     --first-color :hsl(var(--hue-color), 0%,55%);
     --first-color-second :hsl(var(--hue-color), 0%,55%); ;
-    --first-color-alt :hsl(var(--hue-color), 0%,55%); ;
-    --first-color-lighter :hsl(var(--hue-color), 0%,55%); ;
+    --first-color-alt :hsl(var(--hue-color), 0%,55%); 
+    --first-color-lighter :rgb(65, 65, 65);
     --title-color : rgba(82, 82, 82,1);
-    --text-color :  rgba(82, 82, 82,.8);
-    --text-color-light : hsl(var(--hue-color), 0%,55%);
-    --input-color:rgb(223, 223, 223);
-    --body-color :hsl(var(--hue-color), 60%,69%) ;
-    --body-color :#fff;
-    --continer-color : #bb9191;
+    --text-color :  #fff;
+    --text-color-light :  rgb(65, 65, 65);
+    --input-color:rgb(68, 68, 68);
+    --body-color : rgb(15, 15, 15);
+    --continer-color : #bb91b7;
+
+    --text-button-color: rgb(255, 255, 255);
+    --text-hover-color: rgb(255, 255, 255);
+    
+    transition: 1s;
 }

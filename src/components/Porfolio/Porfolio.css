@@ -56,3 +56,7 @@
    margin : 10px;
    top : 0;
 }
+
+.swiper-cube .swiper-cube-shadow:before{
+    background-color: var(--body-color);
+}

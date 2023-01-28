@@ -14,6 +14,9 @@
     <router-link to="#" class="scrollup" id="scrollup">
       <unicon name="arrow-up" class="scrollup__icon"/>
     </router-link>
+    <router-link to="#" class="change-theme" id="scrollup" @click="this.changeTheme">
+      <unicon name="moon" class="scrollup__icon"/>
+    </router-link>
   </main>
 </template>
 <script>
@@ -30,6 +33,11 @@ import Contact from "../components/Contact/Contact.vue"
 import Footer from "../components/Footer/Footer.vue"
 export default {
   name :"HomeView" ,
+  data(){
+    return{
+      isDarkTheme : false
+    }
+  },
   components : {
     NavBar,
     Home,
@@ -68,7 +76,15 @@ export default {
         behavior:"smooth"
       })
     },
- 
+    changeTheme(){
+      this.isDarkTheme = !this.isDarkTheme
+      const body = document.getElementsByTagName('body')[0]
+      if (this.isDarkTheme) {
+        body.classList.add('dark-theme')
+      } else {
+        body.classList.remove('dark-theme')
+      }
+    }
   }
 
 }

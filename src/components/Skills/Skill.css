@@ -56,7 +56,7 @@
 }
 .skills__percentage{
     display: block;
-    background-color: black;
+    background-color: var(--hover-color)
 }
 .skills__html{
     width: 40%;

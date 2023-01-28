@@ -106,12 +106,3 @@
     display: flex;
     align-items: center;
  }
- .change-theme{
-    font-size: 1.25rem;
-    fill: var(--main-color);
-    margin-right: var(--mb-1);
-    cursor: pointer;
- }
- .change-theme:hover{
-    fill :var(--hover-color)
- }
