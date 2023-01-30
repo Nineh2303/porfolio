@@ -100,6 +100,7 @@
         </section>
 </template>
 <script>
+import { slotFlagsText } from '@vue/shared'
 import $ from 'jquery'
 export default {
     data() {
@@ -167,26 +168,34 @@ export default {
         }
     },
     mounted() {
-        const skillsContent =  document.getElementsByClassName('skills__content')
-
-        const skillsHeader = document.querySelectorAll('.skills__header')
-        skillsHeader.forEach((el) => {
-            el.addEventListener('click', (el) => {
-                let itemClass = el.path[3].className                
-                for (let i = 0; i < skillsContent.length; i++) {
-                    skillsContent[i].className = 'skills__content skills__close'
-
+        const skillHeaders= document.querySelectorAll(".skills__content")
+        skillHeaders.forEach(skillHeader=>{
+            skillHeader.addEventListener('click',()=>{
+                 if(skillHeader.classList[1]=='skills__open'){
+                    skillHeader.classList.remove('skills__open')
+                    skillHeader.classList.add('skills__close')
+                }  else {
+                    skillHeaders.forEach(skillHeader=>{
+                    if(skillHeader.classList[1]=='skills__open'){
+                    skillHeader.classList.remove('skills__open')
+                    skillHeader.classList.add('skills__close')
+                } 
+                })
+               
+                    {
+                    skillHeader.classList.remove('skills__close')
+                    skillHeader.classList.add('skills__open')
                 }
-                if (itemClass === 'skills__content skills__close') {
-                    el.path[3].className = 'skills__content skills__open'
                 }
-
+                
             })
-
         })
+           
     },
     methods: {
-
+        toggle(){
+            
+        }
     }
 }
 </script>
