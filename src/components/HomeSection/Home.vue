@@ -15,7 +15,7 @@
                         </router-link>
                     </div>
                     <div class="home__img">
-                        <ComponentLoader  className="blob__components"/>
+                        <ComponentLoader  class="blob__components"/>
                     </div>
                     <div class="home__data">
                         <h1 class="home__title"> Hi, My name's Nguyen Duc Chinh </h1>
@@ -50,5 +50,5 @@ export default {
 }
 </script>
 <style>
-    @import url(Home.css);
+    @import url("./Home.css");
 </style>

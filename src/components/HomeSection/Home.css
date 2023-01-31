@@ -16,14 +16,14 @@
     row-gap: 1rem;
 }
 .home__social-icon{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--main-color);
 }
 .home__social-icon:hover{
     color :var(--hover-color);  
 }
 .home__blob{
-    width: 300px;
+    width: 250px;
     fill: var(--main-color);
 }
 .home__blob-img{

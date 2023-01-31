@@ -100,7 +100,7 @@
     fill: var(--hover-color);
  }
  .scroll-header{
-    box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+    box-shadow: 0 0 8px var(--shadow-color);
  }
  .nav__btns{
     display: flex;
