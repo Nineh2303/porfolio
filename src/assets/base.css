@@ -348,7 +348,7 @@ body.dark-theme{
             grid-template-columns: .5fr;
     }
     .services__container{
-        grid-template-columns: repeat(3,218px);
+        grid-template-columns: repeat(3,300px);
         justify-content: center;
     }
     .services__icon{
@@ -356,7 +356,8 @@ body.dark-theme{
         height: 2rem;
     }
     .services__content{
-        padding: 6rem 0 2rem 2.5rem ;
+        padding: 6rem .5rem 1rem 1.5rem ;
+        width : 220px;
     }
     .services__modal-content{
         width: 450px;
