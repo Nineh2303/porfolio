@@ -10,10 +10,15 @@
 .nav__logo,.nav__toggle{
     color: var(--title-color)  ;
     font-weight: var(--font-medium);
+    font-family: "Pacifico";
+    font-size: 30px;
 }
 .nav__logo:hover{
     color: var(--first-color);
-    
+}
+.logo__subtitle {
+    font-family: "JetBrains Mono ExtraBold";
+    font-size: 15px;
 }
 
 .nav__toggle{
@@ -61,13 +66,25 @@
     transition: .1s;
     
 }
+.nav__link-bar {
+    width: 0;
+    height: 3px;
+    background-color: var(--main-color);
+    margin-top: -3px;
+    transition: ease-in .2s;
+    border-radius: 5px;
+    border-radius: 5px;
+}
 
 .nav__link:hover{
     color: var(--hover-color); 
     fill: var(--hover-color);
-    box-shadow: 2px 3px .1rem 0 rgba(0,0,0,.15);
     border-radius: .5rem ;
 }
+.nav__link:hover .nav__link-bar{
+    width: 100%;
+}
+
 
 .nav__close{
     fill:var(--main-color);

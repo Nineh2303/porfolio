@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Roboto:wght@100;300;400;500&family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 :root {
 
     --header-height: 3rem;
@@ -66,7 +66,7 @@
         --h2-font-size :1.5rem ;
         --h3-font-size :1.25rem;
         --normal-font-size:1rem;
-        --small-font-size:.875rem
+        --small-font-size:.875rem;
         --smaller-font-size:.813rem;
     }
 }
@@ -94,7 +94,7 @@ body{
 }
 
 h1,h2,h3,h4{
-    color: var(--title--color);
+    color: var(--title-color);
     font-weight: var(--font-semi-bold);
 
 }
@@ -246,7 +246,7 @@ body.dark-theme{
     }
     .about__container,
     .skills__container,
-    .porfolio__content,
+    .Portfolio__content,
     .contact__container,
     .footer__container{
         grid-template-columns: repeat(2,1fr);
@@ -362,10 +362,10 @@ body.dark-theme{
     .services__modal-content{
         width: 450px;
     }
-    .porfolio__img{
+    .Portfolio__img{
         width: 320px;
     }
-    .porfolio__content{
+    .Portfolio__content{
         align-items: center;
     }
     .footer__container{
@@ -401,7 +401,7 @@ body.dark-theme{
     .services__container{
         grid-template-columns: repeat(3,238px);
     }
-    .porfolio__content{
+    .Portfolio__content{
         column-gap: 5rem;
     }
     .swiper-button-next:after, .swiper-button-prev:after{

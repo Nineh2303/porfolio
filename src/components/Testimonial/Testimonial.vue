@@ -1,14 +1,10 @@
-<template lang="">
-    <section class="testimonial section">
-        <h2 class="section__title">Testimonial</h2>
-        <span class="section__subtitle"> My CLient Say</span>
-    </section>
+<template>
+  <section class="testimonial section">
+    <h2 class="section__title">Testimonial</h2>
+    <span class="section__subtitle"> My CLient Say</span>
+  </section>
 </template>
 <script>
-export default {
-    
-}
+export default {};
 </script>
-<style lang="">
-    
-</style>
+<style lang=""></style>

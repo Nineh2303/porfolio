@@ -1,12 +1,13 @@
-
-
 <template>
   <RouterView />
-
 </template>
-<script>
-import {RouterView } from "vue-router";
+<script setup>
+import { usePortfolioStore } from "@/stores";
+import { onBeforeMount } from "vue";
+onBeforeMount(() => {
+  const portfolioStore = usePortfolioStore();
+  portfolioStore.fetchSkill();
+  portfolioStore.fetchProject();
+});
 </script>
-
-<style>
-</style>
+<style></style>

@@ -1,28 +1,28 @@
 
-.porfolio__container{
+.Portfolio__container{
     overflow: initial;
 }
-.porfolio__content{
+.Portfolio__content{
     padding: 0  1.5rem;
     height: 500px;
 }
-.porfolio__img{
+.Portfolio__img{
     width: 300px;
     border-radius: .5rem;
     justify-self: center;
 }
-.porfolio__title{
+.Portfolio__title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
 }
-.porfolio__description{
+.Portfolio__description{
     margin-bottom: var(--mb-0-75);
 }
 .button__icon{
     margin-top: 7px;
 
 }
-.porfolio__button:hover .button__icon{
+.Portfolio__button:hover .button__icon{
     transform: translateX(.25rem) ;
 }
 
